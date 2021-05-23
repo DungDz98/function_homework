@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IndexOf</title>
+</head>
+<body>
+<script>
+    let arr1 = [1, 2, 6, 8, 98, 12, 2, 0, 'codegym'];
+    function indexOf(arr, key, start) {
+        let result = -1;
+        if (arguments.length == 2) {
+            start = 0;
+        }
+        for (let i = start; i < arr.length; i++) {
+            if (arr[i] === key) {
+                result = i;
+                break;
+            }
+        }
+        return result;
+    }
+    alert(indexOf(arr1, 'codegym'));
+</script>
+</body>
+</html>

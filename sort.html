@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sort</title>
+</head>
+<body>
+<script>
+  let arr1 = [5, 2, 1, 98, 12, 33];
+  function sort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = i + 1; j < arr.length; j++) {
+        if (arr[j] < arr[i]) {
+          let a = arr[i];
+          arr[i] = arr[j];
+          arr[j] = a;
+        }
+      }
+    }
+    return arr;
+  }
+  document.write(sort(arr1));
+
+</script>
+</body>
+</html>

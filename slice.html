@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slice</title>
+</head>
+<body>
+<script>
+    let arr1 = ['code', 'gym', 98, 12, 'Java', 'Js'];
+    function slice(arr, start, end) {
+        let arr2 = [];
+        if (arguments.length == 2 || end > arr.length) {
+            end = arr.length;
+        }
+        for (let i = start; i < end; i++) {
+            arr2[i-start] = arr[i];
+        }
+        return arr2;
+    }
+    document.write(slice(arr1, 3,5));
+</script>
+</body>
+</html>

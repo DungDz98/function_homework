@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Push</title>
+</head>
+<body>
+<script>
+  let arr1 = [1, 2, 'hi', 'codegym', 98, 12];
+  function push(arr) {
+    let arr2 = [];
+    let index = arguments.length;
+    let lengthOld = arr.length;
+    let lengthNew = arr.length + index - 1;
+    for (let i = 1; i < index; i++) {
+      arr[lengthOld + i - 1] = arguments[i];
+    }
+    return lengthNew;
+  }
+  document.write(push(arr1, 'dungnguyen', 'no1',5,6,7,2));
+  document.write('<br>');
+  document.write(arr1);
+</script>
+</body>
+</html>
